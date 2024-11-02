@@ -1,0 +1,179 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+    --cinza: #999;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--preto);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+header .logo {
+    color: var(--vermelho);
+    font-size: 36px;
+    font-weight: bold;
+}
+
+header nav a {
+    color: var(--cinza);
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+.titulo-secao {
+    font-size: 24px;
+    margin: 20px;
+    color: white;
+}
+
+.jogos-galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.jogo-item {
+    text-align: center;
+    color: white;
+    transition: transform 0.3s;
+}
+
+.jogo-item:hover {
+    transform: scale(1.05);
+}
+
+.jogo-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: opacity 0.3s;
+}
+
+.jogo-item:hover img {
+    opacity: 0.8;
+}
+
+.jogo-nome {
+    margin-top: 10px;
+    font-size: 18px;
+    color: var(--cinza);
+    transition: color 0.3s;
+}
+
+.jogo-item:hover .jogo-nome {
+    color: white;
+}
+
+/* Estilos da barra de pesquisa */
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-form button {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: var(--vermelho);
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #c40812;
+}
+
+/* Alinhamento do cabeçalho */
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+/* Logo */
+header .logo {
+    color: var(--vermelho);
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/* Agrupamento de navegação e pesquisa */
+.nav-search {
+    display: flex;
+    align-items: center;
+}
+
+/* Link "Início" */
+header nav a {
+    color: var(--cinza);
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 10px; /* Aproxima o link da barra de pesquisa */
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: white;
+}
+
+/* Barra de pesquisa */
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-form input[type="text"] {
+    padding: 8px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    outline: none;
+}
+
+.search-form button {
+    padding: 8px 12px;
+    font-size: 16px;
+    background-color: var(--vermelho);
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-form button:hover {
+    background-color: #c40812;
+}
